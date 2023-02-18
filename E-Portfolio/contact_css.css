@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* Author: Mohamada Taha Daher
+   Date: Oct 27, 2022           */
+   
+/* CSS Style for Contact Page */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat", sana-serif;
+}
+
+body {
+	background: url(blue2.jpg) no-repeat center;
+}	
+
+nav a {
+	color: white;
+	font-size: 20px;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.contact-section { 
+	background-size: 100%;
+	background-size: cover;
+	padding: 40px 0;
+}
+
+.contact-section h1 {
+	text-align: center;
+	color: #12475f;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.border {
+    height: 5px;
+    width: 225px;
+    background-color: #94D9EA;
+    display: block;
+    margin: 40px auto;
+}
+
+
+.contact-form {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.contact-form-text {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #00324a;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+} 
+
+.contact-form-text:hover {
+	box-shadow: 0 0 10px 4px lightblue;
+}
+
+textarea.contact-form-text {
+	resize: none;
+	height: 120px;
+}
+
+.contact-form-btn {
+	float: right;
+	border: 0;
+	background: #34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+}
+
+.contact-form-btn:hover {
+	background: #2980b9;
+}
+
+/* style for mobile (phone) only */
+@media only screen and (max-width:480px) {
+	a#navicon {
+		display: block;
+	}
+	
+	nav.horizontal ol {
+		display: none;
+	}
+	
+	a#navicon:hover+ol, nav.horizontal ol:hover {
+		display: block;
+	}
+	
+	.contact-section h1 {
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 0.6em;
+	}
+	
+	nav.horizontal {
+		float: left;
+		padding-bottom: 20%;
+	}
+}
+
+/* style for tablets and desktop */
+@media only screen and (min-width:481px) {
+
+	nav a {
+	color: white;
+	font-size: 20px;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	}
+	
+	.contact-form {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+	}
+	
+}
+
+/* style for Desktop only */
+@media only screen and (min-width:769px) {
+}
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+

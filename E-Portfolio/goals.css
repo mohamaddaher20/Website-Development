@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* Author: Mohamada Taha Daher
+   Date: Oct 21, 2022           */
+   
+/* CSS Style for goals Page */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat", sana-serif;
+}
+
+.goals {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #12475f;
+	flex-wrap: wrap;
+}
+
+.top {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	position: relative;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 30px;
+	color: #94D9EA;
+	letter-spacing: 0.3em
+}
+
+hr {
+	position: relative;
+	width: 225px;
+	height: 4px;
+	border: none;
+	background-color: #94D9EA;
+}
+
+.content {
+	position: relative;
+	width: 300px;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+}
+
+.content img {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	background: #eee;
+	border-radius: 50%;
+	border: 3px solid #002333;
+}
+
+
+h2 {
+	font-size: 20px;
+	margin: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #002333;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.4;
+	color: white;
+}
+
+body {
+	background: url(blue2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+nav a {
+	color: white;
+	font-size: 20px;
+	padding: 10px 50px;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+}
+.content {
+	float: left;
+	width: 60%;
+}
+
+/* style for mobile (phone) only */
+@media only screen and (max-width:480px) {
+	a#navicon {
+		display: block;
+	}
+	
+	nav.horizontal ol {
+		display: none;
+	}
+	
+	a#navicon:hover+ol, nav.horizontal ol:hover {
+		display: block;
+	}
+	
+	.top h1 {
+		color: #94D9EA;
+	}
+	
+	.content {
+		margin: 0;
+		padding: 0;
+		width: 98%;
+	}
+	
+	hr {
+		margin-bottom: 20px;
+	}
+	
+	nav.horizontal {
+		float: left;
+	}
+}
+
+/* style for tablets and desktop */
+@media only screen and (min-width:481px) {
+}
+
+/* style for Desktop only */
+@media only screen and (min-width:769px) {
+}

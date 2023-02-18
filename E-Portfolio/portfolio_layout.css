@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* Author: Mohamada Taha Daher
+   Date: Oct 27, 2022           */
+
+.main-content {
+	min-height: 100%;
+	width: 80%;
+	margin: 2em auto;
+}
+
+.left-section {
+	height: 98%;
+	background-color: #00324A;
+	color: #AACAE3;
+	padding: 1em 1.5em;
+}
+
+.right-section {
+	height: 100%; 
+	background-color: #f7f7f7;
+}
+
+.profile {
+	width: 100%;
+	border-bottom: 1px solid #002333;
+}
+
+.profile img {
+	width: 100%;
+	border-radius: 50%;
+	border: 8px solid #002333;
+}
+
+.name {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 1px;
+	padding: 1.2em 0;
+	text-transform: uppercase;
+}
+
+.school { 
+	font-size: 1.2em;
+	color: #94D9EA;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 1rem;
+}
+
+.main-title { 
+	font-size: 1.8em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f7f7f7ec;
+	padding-top: 0.4em;
+}
+
+.contact-info ul {
+	padding-top: 0.5em;
+}
+
+.contact-info ul li {
+	padding: .4rem 0;
+	color: #f7f7f7;
+	font-size: 1.1em;
+}
+
+.skill-title {
+	text-transform: uppercase;
+	color: #f7f7f7;
+	font-size: 1em;
+}
+	
+.sub-title {
+	text-align: center;
+	color: #f7f7f7;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.right-main-content {
+	padding: 2em 3em;
+}
+
+.right-section h2 {
+	color: #2f80ED;
+	border-bottom: 2px solid #00324A;
+	padding-bottom: 0.5em;
+	color: #2f80ED;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.right-main-content {
+	line-height: 1.6em;
+	color: #718096;
+	font-size: 1.2em;
+}
+
+.para2 {
+	color: #718096;
+}
+
+.achievement ul {
+	letter-spacing: 1px;
+}
+
+nav ol {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+} 
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 50px;
+}
+
+a#navicon {
+	display: none;
+}
+
+body {
+	background: url(blue2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/* style for mobile (phone) only */
+@media only screen and (max-width:480px) {
+	
+	a#navicon {
+		display: block;
+	}
+	
+	nav.horizontal ol {
+		display: none;
+	}
+	
+	a#navicon:hover+ol, nav.horizontal ol:hover {
+		display: block;
+	}
+	
+	.main-content {
+		width: 99%;
+	}
+		
+}
+
+/* style for tablets and desktop */
+@media only screen and (min-width:481px) {
+	.main-content {
+		display: grid;
+		grid-template-columns:repeat(7, 1fr);
+	}
+
+	.left-section {
+		grid-column: span 2;
+	}
+
+	.right-section {
+		grid-column: span 5;
+	}
+	
+}
+
+/* style for Desktop only */
+@media only screen and (min-width:769px) {
+
+
+}

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* Author: Mohamad Taha Daher
+   Date: Oct 27, 2022 		  */ 
+
+/* About Me style page */ 
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "montserrat", sana-serif;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+body {
+	background: url(blue2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.about {
+	height: 100%;
+	width: 100%;
+}
+
+.text {
+	padding: 30px 100px;
+}
+
+.about h1 {
+	font-size: 50px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #94D9EA;
+	letter-spacing: 0.2em
+} 
+
+.about h1:after {
+	content: "";
+	height: 5px;
+	width: 225px;
+	background-color: #94D9EA;
+	display: block;
+	margin: auto;
+}
+
+section img {
+	height: 225px;
+	width: 300px;
+	border: 5px solid #203483;
+	border-radius: 50%;
+	margin-top: 60px;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 20px;
+	margin-top: 30px;
+	color:#f7f7f7ec;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 30px;
+	color: #f7f7f7ec;
+}
+
+nav a {
+	color: white;
+	font-size: 20px;
+	padding: 10px 50px;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+}
+
+/* style for mobile (phone) only */
+@media only screen and (max-width:480px) {
+	a#navicon {
+		display: block;
+	}
+	
+	nav.horizontal ol {
+		display: none;
+	}
+	
+	a#navicon:hover+ol, nav.horizontal ol:hover {
+		display: block;
+	}
+	
+	nav li {
+		color: white;
+	}
+	
+	.about h1 {
+		color: white;
+		text-align: center;
+		font-size: 30px;
+		padding: 50px;
+	}
+	
+	section img {
+		margin-top: 0;
+	}
+	
+	a#navicon{
+		color: white;
+	}
+	
+	nav.horizontal {
+		float: left;
+	}
+	
+	.text {
+	padding: 5px 0;
+	}
+}
+
+/* style for tablets and desktop */
+@media only screen and (min-width:481px) {
+
+	p {
+		font-family: sans-serif;
+		font-size: 20px;
+		margin-top: 30px;
+		color: #f7f7f7ec;
+	}
+	
+	.text {
+	padding: 30px 100px;
+	}
+
+	.about h1 {
+		font-size: 50px;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		color: #94D9EA;
+		letter-spacing: 0.2em
+	} 
+}
+
+/* style for Desktop only */
+@media only screen and (min-width:769px) {
+}
